@@ -1,0 +1,47 @@
+<DOCTYPE html>
+<html>
+
+<head>
+    <title>Math Circles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="main_div">
+
+        <canvas id="main_canvas" width="800" height="800"></canvas>
+
+        <div id="control_div">
+
+            <div>
+                <h1>Nodes: <span id="nof_nodes_indicator"></span></h1>
+                <input type="range" min="10" max="1000" value="100" class="slider" step="1" id="nof_nodes_slider">
+            </div>
+           
+            <div>
+                <h1>Multiply by: <span id="multiplier_indicator"></span></h1>
+                <input type="range" min="1" max="1000" value="2" class="slider" step="0.1" id="multiplier_slider" >
+            </div>
+
+            <div>
+                <h1>Node radius: <span id="node_radius_indicator"></span></h1>
+                <input type="range" min="0" max="10" value="2" class="slider" step="0.1" id="node_radius_slider">
+            </div>
+
+            <div>
+                <h1>Color: <span id="color_indicator"></span></h1>
+                <input type="range" min="0" max="255" value="0" class="slider" step="1" id="red_slider">
+                <input type="range" min="0" max="255" value="255" class="slider" step="1" id="green_slider">
+                <input type="range" min="0" max="255" value="0" class="slider" step="1" id="blue_slider">
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="logic.js"></script>
+
+</body>
+
+</html>
